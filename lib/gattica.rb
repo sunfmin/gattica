@@ -1,5 +1,7 @@
 $:.unshift File.dirname(__FILE__) # for use/testing when no gem is installed
-
+module Gattica
+  VERSION = '0.3.2.scottp'
+end
 # external
 require 'net/http'
 require 'net/https'
@@ -25,9 +27,7 @@ require 'gattica/data_point'
 # Please see the README for usage docs.
 
 module Gattica
-  
-  VERSION = '0.3.2.scottp'
-  
+
   # Creates a new instance of Gattica::Engine and gets us going. Please see the README for usage docs.
   #
   #   ga = Gattica.new({:email => 'anonymous@anon.com', :password => 'password, :profile_id => 123456 })
